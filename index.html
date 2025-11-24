@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Reviews Component</title>
+    
+    <!-- Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons: FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="bs-container">
+        
+        <!-- Header -->
+        <div class="bs-header">
+            <h2 class="bs-title"><span class="bs-bullet"></span> What Brands Says</h2>
+        </div>
+
+        <!-- Grid -->
+        <div class="bs-grid">
+
+            <!-- Card 1: Darwin Karl (Starts Flipped/Active based on image) -->
+            <div class="bs-card flipped" id="card-1">
+                <div class="bs-card-inner">
+                    <!-- Front (Logo) -->
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-1')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-brands fa-codepen bs-logo-icon"></i>
+                            <span>codot.</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Back (Review) -->
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-1')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "Every thriving brand experience is based on the of a refined strategy and visual aesthetic."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">Darwin Karl</span>
+                            <span class="bs-author-role">Youtube Influencer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Logo (Flower) -->
+            <div class="bs-card" id="card-2">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-2')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-solid fa-asterisk bs-logo-icon" style="color: #9CA3AF;"></i>
+                            <span>Logo</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-2')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "Simple, elegant, and incredibly effective. Our rebranding process was seamless."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">Sarah Jenkins</span>
+                            <span class="bs-author-role">Art Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Logoipsum -->
+            <div class="bs-card" id="card-3">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-3')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-solid fa-bolt bs-logo-icon"></i>
+                            <span>Logoipsum</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-3')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "The attention to detail is unmatched. Highly recommended for enterprise solutions."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">Mark Chen</span>
+                            <span class="bs-author-role">CTO, TechFlow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Another Logo -->
+            <div class="bs-card" id="card-4">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-4')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-solid fa-cube bs-logo-icon"></i>
+                            <span>Brands</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-4')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "Transformed our digital presence completely. The ROI was visible within weeks."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">Emma Watson</span>
+                            <span class="bs-author-role">Marketing Head</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- Row 2 Card 1: Logoipsum (Box) -->
+            <div class="bs-card" id="card-5">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-5')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-solid fa-box-open bs-logo-icon"></i>
+                            <span>Logoipsum</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-5')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "A delight to work with. They understood our vision immediately."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">David Miller</span>
+                            <span class="bs-author-role">CEO, StartUp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 Card 2: Logoipsum (Circle) -->
+            <div class="bs-card" id="card-6">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-6')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-regular fa-circle-dot bs-logo-icon"></i>
+                            <span>Logoipsum</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-6')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "Innovative designs that actually convert. We are thrilled with the results."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">Lisa Ray</span>
+                            <span class="bs-author-role">Founder</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Row 2 Card 3: 1000 -->
+             <div class="bs-card" id="card-7">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-7')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <span>1000+</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-7')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "Over 1000 successful projects delivered with consistency and style."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">Team Metric</span>
+                            <span class="bs-author-role">Internal Stat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 Card 4: Logo (Leaf) -->
+            <div class="bs-card" id="card-8">
+                <div class="bs-card-inner">
+                    <div class="bs-card-front">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-8')">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="bs-logo-wrapper">
+                            <i class="fa-brands fa-pagelines bs-logo-icon"></i>
+                            <span>Agol</span>
+                        </div>
+                    </div>
+                    <div class="bs-card-back">
+                        <button class="bs-toggle-btn" onclick="toggleCard('card-8')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <p class="bs-review-text">
+                            "Sustainable design practices meets modern aesthetics. Perfect match."
+                        </p>
+                        <div class="bs-author-info">
+                            <span class="bs-author-name">John Green</span>
+                            <span class="bs-author-role">Eco Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function toggleCard(cardId) {
+            const card = document.getElementById(cardId);
+            card.classList.toggle('flipped');
+        }
+    </script>
+
+</body>
+</html>
