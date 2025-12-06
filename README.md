@@ -227,7 +227,7 @@ const FlipCard = ({ id, logo, review, author, role }) => {
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License](https://github.com/thisislefa/Solstice/blob/main/LICENSE).
 
 ## Acknowledgments
 
@@ -267,4 +267,5 @@ For issues, questions, or contributions:
 ---
 
 *Built with pure HTML, CSS, and JavaScript. No frameworks, no build steps, just clean code.*
+
 
