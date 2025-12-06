@@ -4,7 +4,7 @@ An interactive testimonial showcase featuring flip cards that reveal brand revie
 
 ## Live Preview
 
-[View Live Demo](https://thisigithub.io/Solstice)
+[View Live Demo](https://thisislefa.github.io/Solstice)
 
 ## Features
 
@@ -267,5 +267,6 @@ For issues, questions, or contributions:
 ---
 
 *Built with pure HTML, CSS, and JavaScript. No frameworks, no build steps, just clean code.*
+
 
 
